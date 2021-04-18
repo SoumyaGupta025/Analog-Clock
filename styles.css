@@ -1,0 +1,86 @@
+body{
+  background: #D9D7DD;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.clock{
+  border-radius: 50%;
+  border: 5px solid #aeb8bb;
+  background: #ffffff;
+  height: 500px;
+  width: 500px;
+  box-shadow: inset 5px 4px 3px #d0d6dc;
+}
+
+.wrap {
+  overflow: hidden;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+}
+
+.hour{
+  position: absolute;
+  background: black;
+  margin: auto;
+  height: 150px;
+  width: 8px;
+  z-index: 1;
+  border-radius: 10px;
+  box-shadow: 3px 2px 2px grey;
+  top: 107px;
+  left: 245px;
+  transform: rotate(0deg);
+  transform-origin: bottom center;
+}
+
+.minute{
+  position: absolute;
+  background: black;
+  margin: auto;
+  height: 180px;
+  width: 6px;
+  z-index: 1;
+  border-radius: 2px;
+  box-shadow: 3px 2px 2px grey;
+  top: 77px;
+  left: 245px;
+  transform: rotate(0deg);
+  transform-origin: bottom center;
+}
+
+.second{
+  position: absolute;
+  background-color: red;
+  margin: auto;
+  height : 160px;
+  width : 4px;
+  z-index: 1;
+  border-radius: 0;
+  box-shadow: 3px 2px 2px grey;
+  top: 97px ;
+  left: 248px;
+  transform: rotate(0deg);
+  transform-origin: bottom center;
+}
+
+.dot {
+  position: absolute;
+  top: 0 ;
+  left: 0 ;
+  right: 0 ;
+  bottom: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid #1b1b1b;
+  box-shadow: 1.5px 1px 1px grey;
+  border-radius: 100px;
+  margin: auto;
+  z-index: 1;
+}
